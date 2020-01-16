@@ -1,0 +1,20 @@
+{
+    "ubicaciones": [
+      {
+        "zona": "Lavado",
+        "ubicacion": "A1",
+        "tipo": "Piso"
+      },
+      {
+        "zona": "AlmacenPT",
+        "ubicacion": "K7.1",
+        "tipo": "Rack"
+      },
+      {
+        "zona": "Lavado",
+        "ubicacion": "A1",
+        "tipo": "Piso"
+      }
+    ]
+  }
+  

@@ -1,0 +1,40 @@
+{
+    "usuarios": [
+      {
+        "clave": "6010250",
+        "nombre": "Jesús López Pérez",
+        "correo": "jesus.lopez@agrana.com",
+        "contraseña":"12345678",
+        "puesto": "almacenista"
+      },
+      {
+        "clave": "6010255",
+        "nombre": "Ruben Aguilar Magaña",
+        "correo": "ruben.aguilar@agrana.com",
+        "contraseña":"12345678",
+        "puesto": "montacarguista"
+      },
+      {
+        "clave": "6010260",
+        "nombre": "Jorge Linares Silvano",
+        "correo": "jorge.silva@agrana.com",
+        "contraseña":"12345678",
+        "puesto": "montacarguista"
+      },
+      {
+        "clave": "6010265",
+        "nombre": "Alfredo Chavéz Lúa",
+        "correo": "alfredo.chavez@agrana.com",
+        "contraseña":"12345678",
+        "puesto": "auxiliar"
+      },
+      {
+        "clave": "6010270",
+        "nombre": "Marco Magaña L.",
+        "correo": "marco.magaña@agrana.com",
+        "contraseña":"12345678",
+        "puesto": "jefe"
+      }
+    ]
+  }
+  

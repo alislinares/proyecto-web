@@ -1,0 +1,27 @@
+{
+  "name": "ubicacion",
+  "plural": "ubicaciones",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "zona": {
+      "type": "string",
+      "required": true
+    },
+    "posicion": {
+      "type": "string",
+      "required": true
+    },
+    "tipo": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

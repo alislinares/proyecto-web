@@ -1,0 +1,38 @@
+{
+    "contenedores": [
+      {
+        "codigo": "A1103331",
+        "etiqueta": "111033311001",
+        "tag": "C111033311001",
+        "descripcion":"Acero inoxidable",
+        "fecha": "11/11/11",
+        "tara":"79.40"
+      },
+      {
+        "codigo": "A1103332",
+        "etiqueta": "111033321001",
+        "tag": "C111033321001",
+        "descripcion":"Acero inoxidable",
+        "fecha": "11/11/11",
+        "tara":"79.00"
+      },
+      {
+        "codigo": "A1103331",
+        "etiqueta": "111033311001",
+        "tag": "C111033311001",
+        "descripcion":"Acero inoxidable",
+        "fecha": "11/11/11",
+        "tara":"78.50"
+      },
+      {
+        "codigo": "A1103331",
+        "etiqueta": "111033311001",
+        "tag": "C111033311001",
+        "descripcion":"Acero inoxidable",
+        "fecha": "11/11/11",
+        "tara":"79.50"
+      }
+   
+    ]
+  }
+  

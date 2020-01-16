@@ -1,0 +1,25 @@
+{
+    "transportes": [
+      {
+        "proveedor": "Torco",
+        "placas": "PML-1013-ABC",
+        "tipo": "Tráiler" 
+      },
+      {
+        "proveedor": "Maverick",
+        "placas": "JHL-102-2ZP",
+        "tipo": "Tortón" 
+      },
+      {
+        "proveedor": "Vidales",
+        "placas": "LPS-123-A90",
+        "tipo": "Tráiler" 
+      },
+      {
+        "proveedor": "Gallegos R.",
+        "placas": "PLA-103-LPZ",
+        "tipo": "Tortón" 
+      }   
+    ]
+  }
+  

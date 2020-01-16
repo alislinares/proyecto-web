@@ -1,0 +1,27 @@
+{
+  "name": "transporte",
+  "plural": "transportes",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "proveedor": {
+      "type": "string",
+      "required": true
+    },
+    "placas": {
+      "type": "string",
+      "required": true
+    },
+    "tipo": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
