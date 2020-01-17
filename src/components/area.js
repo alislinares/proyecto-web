@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import axios from 'axios';
 import {
     Button,
     List,
@@ -10,44 +10,71 @@ import {
   } from "@material-ui/core";
   
   import DescriptionIcon from '@material-ui/icons/Description';
-  
-  import data from "../assets/data/ubicaciones.json";  
-  import "./../styles/App.css";
 
+  export class Area extends Component {
+    state = {
+      areas: []
+    }
+    componentDidMount() {
+      axios.get(`http://localhost:3001/api/ubicaciones`)
+        .then(res => {
+          const areas = res.data;
+          this.setState({ areas });
+        })
+    }
 
-class Area extends Component {
+    addubicacion = e => {
+      e.preventDefault();
+      this.props.history.push("/addubicacion");
+    };
+
+    
+    deleteubicacion(){
+      let userId =this.state.ubicacion.id;
+      axios.delete(`http://localhost:3001/api/ubicacion/${userId}`)
+      .then(response => {
+        this.props.history.push('/');
+      }).catch(err => console.log(err));
+    };
+
     showMain = e => {
-        e.preventDefault();
-        this.props.history.push("/");
+      e.preventDefault();
+      this.props.history.push("/");
     };
     render() {
-        return(
-            <div>
-                <h1>
-                    Administración de ubicaciones
-                </h1>
-              <Button variant="contained" color="secondary" onClick={this.showMain}>
+      return (
+        <div>
+          <h1>Almacen de Producto Terminado</h1>
+          <Button variant="contained" color="secondary" onClick={this.showMain}>
             Ir al inicio
-            </Button>
-            <List
+          </Button>
+          <Button variant="contained" color="primary" onClick={this.addubicacion}>
+        <DescriptionIcon /> AGREGAR
+        </Button>
+          <List
             component="nav"
-            subheader={<ListSubheader component="div">ubicaciones</ListSubheader>}
-            >
-            {data.ubicaciones.map((ubicacion, index) => (
-                <ListItem button key={index}>
+            subheader={<ListSubheader component="div">Listado de ubicaciones</ListSubheader>}            
+          >          
+            {this.state.areas.map((ubicacion, index) => (
+              <ListItem button key={index}>
                 <ListItemIcon>
-                    <DescriptionIcon />
+                  <DescriptionIcon />
                 </ListItemIcon>
-                <ListItemText inset secondary={ubicacion.zona} />
-                <ListItemText inset primary={ubicacion.ubicacion} />
-                <ListItemText inset secondary={ubicacion.tipo} />
-                </ListItem>
+                <ListItemText inset primary={ubicacion.zona} />
+                <ListItemText inset primary={ubicacion.posicion} />
+                <ListItemText inset primary={ubicacion.tipo} />
+                <Button variant="contained" color="primary" onClick={this.editubicacion}>
+                    Editar
+                </Button>
+                <Button variant="contained" color="secondary" onClick={this.deleteubicacion.bind(this)}>
+                    Borrar
+                </Button>
+              </ListItem>
             ))}
-            </List>
-            </div>
-        );
+          </List>
+        </div>
+      );
     }
-}
-
+  }
 export default Area;
 

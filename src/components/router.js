@@ -6,7 +6,12 @@ import Area from "./../components/area";
 import User from "./../components/user";
 import Contenedor from "./contenedor";
 import Transporte from "./transporte";
-import Usuarios from "./usuarios";
+import Adduser from "./adduser";
+import Edituser from "./edituser";
+import Addcontenedor from "./addcontenedor";
+import Addubicacion from "./addubicacion";
+import Addtransporte from "./addtransporte";
+
 
 const Router = () => (
     <BrowserRouter>
@@ -17,7 +22,12 @@ const Router = () => (
             <Route path="/user" component={User} />
             <Route path="/transporte" component={Transporte} />
             <Route path="/contenedor" component={Contenedor} />
-            <Route path="/usuarios" component={Usuarios} />
+            <Route path="/adduser" component={Adduser} />
+            <Route path="/edituser/:id" component={Edituser} />
+            <Route path="/addcontenedor" component={Addcontenedor} />
+            <Route path="/addubicacion" component={Addubicacion} />
+            <Route path="/addtransporte" component={Addtransporte} />
+         
         </Switch>
     </BrowserRouter>
 )
